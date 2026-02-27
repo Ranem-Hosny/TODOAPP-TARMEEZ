@@ -111,10 +111,14 @@ export default function Todo({ tasks }) {
               <Grid
                 size={4}
                 display="flex"
-                justifyContent="space-around"
+                xs={12}
+                sm={4}
+                justifyContent="flex-end"
+                gap={1}
                 alignItems="center"
               >
                 <IconButton
+                
                   className="iconButton"
                   aria-label="delete"
                   style={{
@@ -124,7 +128,7 @@ export default function Todo({ tasks }) {
                   }}
                   onClick={() => handleCompletedTask(task.id)}
                 >
-                  <CheckIcon />
+                  <CheckIcon fontSize="small" />
                 </IconButton>
 
                 <IconButton
@@ -139,7 +143,7 @@ export default function Todo({ tasks }) {
                     setOpendelete(task.id);
                   }}
                 >
-                  <DeleteIcon />
+                  <DeleteIcon fontSize="small" />
                 </IconButton>
                 <IconButton
                   className="iconButton"
@@ -157,7 +161,7 @@ export default function Todo({ tasks }) {
                     });
                   }}
                 >
-                  <EditIcon />
+                  <EditIcon fontSize="small" />
                 </IconButton>
               </Grid>
               {/* //action buttons */}
