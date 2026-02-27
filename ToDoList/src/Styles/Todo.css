@@ -1,0 +1,18 @@
+.iconButton,
+.todocard {
+  transition: all 0.2s !important;
+}
+
+.complete{
+  background-color: green;
+  color: #fff;
+}
+
+.iconButton:hover {
+  background-color: #c5c5c5 !important;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+}
+.todocard:hover {
+  padding: 15px 0;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+}
